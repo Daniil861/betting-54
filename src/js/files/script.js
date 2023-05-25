@@ -177,7 +177,7 @@ const rightGate = document.querySelector('.game__gate_2');
 const player1 = document.querySelector('.game__player_2');
 
 export const config = {
-	timeConst: 10,
+	timeConst: 60,
 	timeCurrent: 0,
 	scorePl1: 0,
 	scorePl2: 0,
@@ -268,11 +268,10 @@ export function startGame() {
 	config.isPlaying = true;
 	animate();
 	timer();
-	console.log('START GAME');
+
 	config.isBounceEnable = true;
 
 	config.ballEnabliTimeout = setTimeout(() => {
-		console.log('DISABLE Bounce');
 		config.isBounceEnable = false;
 		clearTimeout(config.ballEnabliTimeout);
 	}, 1500);
@@ -280,8 +279,6 @@ export function startGame() {
 
 
 function animate() {
-	// console.log('config.isBounceEnable');
-	console.log(config.isBounceEnable);
 
 	if (config.isBounceEnable) {
 		// Apply gravity
@@ -494,7 +491,6 @@ function restartStartPositionBall(ball, pos = 3, isExitGame = false) {
 
 	if (!isExitGame) {
 		config.ballEnabliTimeout = setTimeout(() => {
-			console.log('DISABLE Bounce');
 			config.isBounceEnable = false;
 			clearTimeout(config.ballEnabliTimeout);
 		}, 1500);
