@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Betting-54"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__body">
+			<div class="wrapper__main main">
+				<div class="main__body">
+					<div class="main__header header-main">
+						<div class="header-main__body">
+							<div class="header-main__score-box score-box _star">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-star icon-anim"></div>
+									<div class="score-box__score check-star">Level 1</div>
+									<div class="score-box__inner"></div>
+								</div>
+							</div>
+							<div class="header-main__score-box score-box">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-game icon-anim"></div>
+									<div class="score-box__score score">0</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__buttons">
+						<div class="main__button-box">
+							<button type="button" data-button="game" class="main__button button"><span>START
+									GAME</span></button>
+							<button type="button" data-button="shop" class="main__button button"><span>MARKET</span></button>
+							<button type="button" data-button="slot" class="main__button button"><span>SLOT</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper__shop shop">
+				<div class="shop__body">
+					<div class="shop__header header-main">
+						<div class="header-main__body">
+							<button type="button" data-button="shop-home"
+								class="header-main__button-home"><span>lobby</span></button>
+							<div class="header-main__score-box score-box _star">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-star icon-anim"></div>
+									<div class="score-box__score check-star">Level 1</div>
+									<div class="score-box__inner"></div>
+								</div>
+							</div>
+							<div class="header-main__score-box score-box">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-game icon-anim"></div>
+									<div class="score-box__score score">0</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shop__title">Market</div>
+					<div class="shop__items">
+						<div data-item="1" class="shop__item shop__item_1">
+							<div class="shop__item-inner shop__item-inner_1">
+								<div class="shop__image">
+									<div class="shop__image-inner">
+										<img src="@img/shop/shop-1.png" alt="Image">
+									</div>
+									<div class="shop__image-colors">
+										<div class="shop__image-color _1 player"><span></span></div>
+										<div class="shop__image-color _2 player"><span></span></div>
+									</div>
+								</div>
+							</div>
+							<div data-shop-button="1" class="shop__button button">
+								<div class="shop__price-inner">
+									<div class="shop__text">buy</div>
+									<div data-price="1" class="shop__price text">0</div>
+								</div>
+							</div>
+						</div>
+						<div data-item="2" class="shop__item shop__item_2">
+							<div class="shop__item-inner shop__item-inner_2">
+								<div class="shop__image">
+									<div class="shop__image-inner">
+										<img src="@img/shop/shop-2.png" alt="Image">
+									</div>
+									<div class="shop__image-colors">
+										<div class="shop__image-color player _3"><span></span></div>
+										<div class="shop__image-color player _4"><span></span></div>
+									</div>
+								</div>
+							</div>
+							<div data-shop-button="2" class="shop__button button">
+								<div class="shop__price-inner">
+									<div class="shop__text">buy</div>
+									<div data-price="2" class="shop__price text">0</div>
+								</div>
+							</div>
+						</div>
+						<div data-item="3" class="shop__item shop__item_3">
+							<div class="shop__item-inner shop__item-inner_3">
+								<div class="shop__image">
+									<div class="shop__image-inner">
+										<img src="@img/shop/shop-3.png" alt="Image">
+									</div>
+									<div class="shop__image-colors">
+										<div class="shop__image-color player _5"><span></span></div>
+										<div class="shop__image-color player _6"><span></span></div>
+									</div>
+								</div>
+							</div>
+							<div data-shop-button="3" class="shop__button button">
+								<div class="shop__price-inner">
+									<div class="shop__text">buy</div>
+									<div data-price="3" class="shop__price text">0</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper__game game">
+				<div class="game__body">
+					<div class="game__field">
+						<img src="@img/other/game-field.png" alt="Image">
+					</div>
+					<div class="shop__header header-main">
+						<div class="header-main__body">
+							<button type="button" data-button="game-home"
+								class="header-main__button-home"><span>lobby</span></button>
+							<div class="header-main__score-box score-box _star">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-star icon-anim"></div>
+									<div class="score-box__score check-star">Level 1</div>
+									<div class="score-box__inner"></div>
+								</div>
+							</div>
+							<div class="header-main__score-box score-box">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-game icon-anim"></div>
+									<div class="score-box__score score">0</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="game__display-score display-score">
+						<div class="display-score__body">
+							<div data-score="1" class="display-score__score">0</div>
+							<span>:</span>
+							<div data-score="2" class="display-score__score">0</div>
+						</div>
+					</div>
+					<div class="game__gate game__gate_1"></div>
+					<div class="game__gate game__gate_2"></div>
+					<div class="game__player-team-box">
+						<div class="game__player game__player_1 player _1">
+							<span></span>
+						</div>
+						<div class="game__player game__player_2 player _1">
+							<span></span>
+						</div>
+						<div class="game__player game__player_3 player _1">
+							<span></span>
+						</div>
+					</div>
+					<div class="game__enemy-team-box">
+						<div class="game__enemy game__enemy_1 player _2">
+							<span></span>
+						</div>
+						<div class="game__enemy game__enemy_2 player _2">
+							<span></span>
+						</div>
+						<div class="game__enemy game__enemy_3 player _2">
+							<span></span>
+						</div>
+					</div>
+					<div class="game__ball">
+						<span></span>
+						<div class="game__ball-inner"></div>
+					</div>
+					<div class="game__footer footer">
+						<div class="footer__body">
+							<div class="footer__arrows">
+								<div data-controls="left" class="footer__btn footer__btn_left"></div>
+								<div class="footer__btn-center">
+									<div data-controls="up" class="footer__btn-center-up"></div>
+									<div data-controls="down" class="footer__btn-center-down"></div>
+								</div>
+								<div data-controls="right" class="footer__btn footer__btn_right"></div>
+							</div>
+							<div class="footer__timer-box timer">
+								<div class="timer__body">
+									<div class="timer__title">Time</div>
+									<div class="timer__timer">0:59</div>
+								</div>
+							</div>
+							<div class="footer__btn-foot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper__slot slot">
+				<div class="slot__body">
+					<div class="slot__header header-main">
+						<div class="header-main__body">
+							<button type="button" data-button="slot-home"
+								class="header-main__button-home"><span>lobby</span></button>
+							<div class="header-main__score-box score-box _star">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-star icon-anim"></div>
+									<div class="score-box__score check-star">Level 1</div>
+									<div class="score-box__inner"></div>
+								</div>
+							</div>
+							<div class="header-main__score-box score-box">
+								<div class="score-box__body">
+									<div class="score-box__icon icon-game icon-anim"></div>
+									<div class="score-box__score score">0</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slot__game">
+						<div class="slot__box">
+							<div class="slot__cont">
+								<div id="slot1" class="slot1">
+									<div id="reels1" class="reels1">
+										<div class="reel1"></div>
+										<div class="reel1"></div>
+										<div class="reel1"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slot__controls controls-slot">
+						<div class="controls-slot__body">
+							<div class="controls-slot__bet-box bet-box">
+								<div class="bet-box__body">
+									<div class="bet-box__minus"><span>-</span></div>
+									<div class="bet-box__info info">
+										<div class="bet-box__bet-inner bg-frame">
+											<p>Bet</p>
+											<div class="bet-box__bet">0</div>
+										</div>
+									</div>
+									<div class="bet-box__plus"><span>+</span></div>
+								</div>
+							</div>
+							<div class="controls-slot__win-box win-box">
+								<div class="win-box__body bg-frame">
+									<div class="win-box__inner">
+										<p>win:</p>
+										<div class="win-box__score">0</div>
+									</div>
+								</div>
+							</div>
+							<div class="controls-slot__button-box">
+								<button type="button" class="controls-slot__max">
+									<span>max </span>
+									<span>bet</span>
+								</button>
+								<button data-btn-slot="2" type="button" class="controls-slot__button-spin">
+									<span>spin!</span>
+									<span>Hold for auto</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="game__final final">
+				<div class="final__body">
+					<div class="final__inner">
+						<div class="final__title">you win!</div>
+						<div class="final__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game"><span></span> </div>
+								<div class="score-box__score final-check">0</div>
+							</div>
+						</div>
+						<div class="final__button-box">
+							<button type="button" class="final__button"><span>ok</span></button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="image-preload">
+				<img src="@img/icons/track-r.svg" alt="Icon">
+				<img src="@img/icons/track.svg" alt="Icon">
+			</div>
+		</div>
+	</div>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
